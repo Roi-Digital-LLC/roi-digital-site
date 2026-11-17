@@ -1,3 +1,7 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ROI Digital Consulting</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 
@@ -296,7 +300,7 @@ svg.icon { flex-shrink: 0; }
 
 /* — Eyebrow + Section Headers — */
 .section-eyebrow {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -960,11 +964,86 @@ svg.icon { flex-shrink: 0; }
 
 /* — Utility — */
 @media (max-width: 600px) {
-  .hero { padding: 4rem 0 3rem; }
-  .section { padding-block: 3rem; }
+  .hero { padding: 2.5rem 0 2rem; display: flex; flex-direction: column; }
+  .hero-ctas { order: 3; margin-top: 1.5rem; gap: 0.75rem; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+  .hero-building { order: 4; margin-top: 2rem; }
+  .hero-building svg { max-width: 170px; height: auto; }
+  .section { padding-block: 2.25rem; }
+  .problem-grid { gap: 0.75rem; margin-top: 1.5rem; }
+  .door-card { padding: 1.1rem 1.25rem; }
+  .value-prop { padding: 1.25rem; margin: 1.5rem auto; }
   .pricing-card { padding: 1.5rem; }
   .nav-link.hide-mobile { display: none; }
-  .hero-building svg { max-width: 280px; height: auto; }
+}
+/* — Bigger type, no boxes — */
+.section-eyebrow { font-size: 1.05rem; }
+.section-title { font-size: clamp(2.4rem, 7vw, 3.8rem); line-height: 1.05; }
+.section-subtitle { font-size: 1.3rem; line-height: 1.5; }
+.hero-body { font-size: clamp(1.2rem, 3vw, 1.45rem); line-height: 1.6; }
+.btn { font-size: 1rem; padding: 0.95rem 1.75rem; }
+.btn-small { font-size: 0.85rem; padding: 0.6rem 1.1rem; }
+.problem-grid { gap: 2.5rem; margin-top: 3rem; }
+.door-card { background: none; border: none; border-radius: 0; padding: 0; }
+.door-icon svg { width: 84px; height: 84px; }
+.door-card h3 { font-size: 1.9rem; line-height: 1.1; }
+.door-pct { font-size: 1.1rem; }
+.door-card p { font-size: 1.2rem; line-height: 1.5; }
+.value-prop { background: none; border: none; border-radius: 0; padding: 0; text-align: center; margin: 3.5rem auto 2rem; }
+.value-prop p { font-size: 1.45rem; line-height: 1.5; }
+.problem-pullquote { font-size: clamp(1.5rem, 4vw, 2.1rem); line-height: 1.35; }
+.phase-days { font-size: 0.95rem; }
+.phase-content h3 { font-size: 1.6rem; }
+.phase-content p { font-size: 1.2rem; line-height: 1.5; }
+.phase-deliverable { font-size: 0.9rem; }
+.audience-list li, .pricing-includes li { font-size: 1.2rem; }
+.audience-list li span { font-size: 1.05rem; }
+.audience-list li { background: none; border: none; border-radius: 0; padding: 0; }
+.faq-q { font-size: 1.3rem; }
+.faq-a { font-size: 1.15rem; line-height: 1.55; }
+.book-card { background: none; border: none; padding: 1rem 0 0; }
+.book-name { font-size: 1.8rem; }
+.book-detail, .book-or { font-size: 1.05rem; }
+.final-cta h2 { font-size: clamp(2.6rem, 8vw, 4.2rem); }
+.final-cta p { font-size: 1.35rem; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+@media (max-width: 600px) {
+  .nav-brand { font-size: 1.3rem; white-space: nowrap; }
+  .section-eyebrow { font-size: 1.1rem; letter-spacing: 0.14em; }
+  .hero-eyebrow { font-size: 0.95rem; letter-spacing: 0.1em; white-space: nowrap; }
+  .hero h1 { font-size: clamp(3rem, 15vw, 3.75rem); line-height: 0.98; }
+  .hero-body { font-size: 1.4rem; line-height: 1.5; text-wrap: pretty; }
+  .btn { font-size: 1.1rem; min-height: 60px; padding: 1rem 1.25rem; }
+  .btn-small { font-size: 0.95rem; min-height: 48px; padding: 0.6rem 1rem; }
+  .section { padding-block: 3rem; }
+  .section-title { font-size: clamp(2.7rem, 13vw, 3.3rem); line-height: 1; }
+  .section-subtitle { font-size: 1.4rem; line-height: 1.45; }
+  .problem-grid { gap: 3rem; }
+  .door-card { padding: 0; }
+  .door-icon svg { width: 96px; height: 96px; }
+  .door-card h3 { font-size: 2.4rem; line-height: 1.05; }
+  .door-pct { font-size: 1.25rem; }
+  .door-card p { font-size: 1.35rem; line-height: 1.45; }
+  .value-prop { padding: 0; margin: 3rem auto 1.5rem; }
+  .value-prop p { font-size: 1.6rem; line-height: 1.4; }
+  .value-prop-kicker { font-size: 1.3rem; }
+  .problem-pullquote { font-size: 1.9rem; line-height: 1.3; }
+  .phase-days { font-size: 1.05rem; }
+  .phase-content h3 { font-size: 1.9rem; line-height: 1.15; }
+  .phase-content p { font-size: 1.35rem; line-height: 1.45; }
+  .phase-deliverable { font-size: 1rem; }
+  .audience-list li { font-size: 1.5rem; }
+  .audience-list li span { font-size: 1.25rem; }
+  .pricing-includes li { font-size: 1.3rem; }
+  .pricing-note, .pricing-terms { font-size: 1.05rem; line-height: 1.5; }
+  .pricing-badge { font-size: 0.9rem; }
+  .faq-q { font-size: 1.45rem; line-height: 1.25; min-height: 60px; }
+  .faq-a { font-size: 1.3rem; line-height: 1.5; }
+  .book-name { font-size: 2.1rem; }
+  .book-detail, .book-or { font-size: 1.2rem; }
+  .final-cta h2 { font-size: clamp(2.8rem, 13.5vw, 3.4rem); line-height: 1; }
+  .final-cta p { font-size: 1.45rem; line-height: 1.4; }
+  .footer, .footer a { font-size: 1rem; }
 }
 </style>
 
@@ -983,7 +1062,7 @@ svg.icon { flex-shrink: 0; }
 <header class="hero wrap">
   <div class="hero-eyebrow">The Blueprint Sprint &middot; 45 Days</div>
   <h1>Your business runs on you.<br>It needs a <em>system.</em></h1>
-  <p class="hero-body">If every answer, decision and follow-up still goes through you, the business can only move as fast as you do. In 45 days we build the operating system it&rsquo;s missing: a clear offer, an AI brain that holds what you know, and the tools to run it. It&rsquo;s designed to give you time back and stop money slipping through the gaps.</p>
+  <p class="hero-body">In 45 days, we AI-ify your business: a clear offer, an AI brain that knows what you know, and the tools to run it. Built to give you your time back.</p>
 
   <!-- Hero building cross-section SVG -->
   <div class="hero-building">
@@ -1014,13 +1093,11 @@ svg.icon { flex-shrink: 0; }
       <!-- Foundation line -->
       <line x1="40" y1="325" x2="280" y2="325" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 3"/>
       <!-- Labels -->
-      <text x="89" y="127" text-anchor="middle" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="8">defined</text>
-      <text x="232" y="127" text-anchor="middle" fill="#4E6585" font-family="Nunito Sans,sans-serif" font-size="8">open</text>
     </svg>
   </div>
 
   <div class="hero-ctas">
-    <a href="#book" class="btn btn-primary">Book a Free Blueprint Call</a>
+    <a href="#book" class="btn btn-primary">Book a Free Call</a>
     <a href="quiz/" class="btn btn-secondary">Take the 2-Minute Assessment</a>
   </div>
 </header>
@@ -1029,362 +1106,51 @@ svg.icon { flex-shrink: 0; }
 <section class="section wrap">
   <div class="section-center">
     <div class="section-eyebrow">The Real Bottleneck</div>
-    <h2 class="section-title">You&rsquo;re Living in a House You Didn&rsquo;t Design</h2>
-    <p class="section-subtitle">Your building runs on a specific kind of energy &mdash; and it came with a front door designed for how you make decisions. Most founders never see these plans. They copy someone else&rsquo;s layout and wonder why the rooms don&rsquo;t work.</p>
+    <h2 class="section-title">Everything Still Runs Through You</h2>
+    <p class="section-subtitle">Nothing moves unless you move it. That&rsquo;s a missing system. It shows up in three places.</p>
   </div>
 
   <div class="problem-grid">
     <div class="door-card">
       <div class="door-icon">
-        <!-- Lighthouse SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="24" y="20" width="16" height="34" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <polygon points="22,20 32,8 42,20" stroke="#38BDF8" stroke-width="1.5"/>
-          <rect x="28" y="10" width="8" height="6" stroke="#E4EAF3" stroke-width="1.5" rx="1"/>
-          <line x1="18" y1="13" x2="10" y2="8" stroke="#D4A056" stroke-width="1.5"/>
-          <line x1="46" y1="13" x2="54" y2="8" stroke="#D4A056" stroke-width="1.5"/>
-          <line x1="16" y1="16" x2="6" y2="16" stroke="#D4A056" stroke-width="1.5"/>
-          <line x1="48" y1="16" x2="58" y2="16" stroke="#D4A056" stroke-width="1.5"/>
-          <line x1="20" y1="54" x2="44" y2="54" stroke="#38BDF8" stroke-width="1.5"/>
-          <rect x="29" y="44" width="6" height="10" stroke="#D4A056" stroke-width="1.5"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 54 V46 C14 42 11 34 13 26 C15 15 24 9 34 10 C45 11 52 19 52 29 L56 37 H52 V44 C52 47 50 48 47 48 H42 V54" stroke="#38BDF8" stroke-width="1.5"/><rect x="24" y="20" width="16" height="13" rx="1" stroke="#D4A056" stroke-width="1.5"/><line x1="27" y1="24.5" x2="37" y2="24.5" stroke="#D4A056" stroke-width="1.5"/><line x1="27" y1="28.5" x2="34" y2="28.5" stroke="#D4A056" stroke-width="1.5"/></svg>
       </div>
-      <h3>The Lighthouse</h3>
-      <div class="door-pct">~9% of founders</div>
-      <p>Built to signal, initiate, and set direction. Their energy works in bursts &mdash; broadcast, then rest. When they try to sustain like a power plant, the light burns out. Their front door opens outward: inform, then let go.</p>
+      <h3>It All Lives in Your Head</h3>
+      <div class="door-pct">Costs you: your message</div>
+      <p>So your brand never makes it out. If the message is off, more marketing won&rsquo;t fix it. It all falls flat.</p>
     </div>
     <div class="door-card">
       <div class="door-icon">
-        <!-- Power Plant SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="12" y="24" width="40" height="30" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <rect x="18" y="30" width="10" height="10" stroke="#E4EAF3" stroke-width="1.5"/>
-          <rect x="36" y="30" width="10" height="10" stroke="#E4EAF3" stroke-width="1.5"/>
-          <line x1="12" y1="54" x2="52" y2="54" stroke="#38BDF8" stroke-width="1.5"/>
-          <!-- Energy flowing through -->
-          <path d="M23 14 L23 24" stroke="#D4A056" stroke-width="1.5"/>
-          <path d="M32 10 L32 24" stroke="#D4A056" stroke-width="1.5"/>
-          <path d="M41 14 L41 24" stroke="#D4A056" stroke-width="1.5"/>
-          <!-- Energy pulse lines -->
-          <path d="M20 12 L26 12" stroke="#D4A056" stroke-width="1" stroke-dasharray="2 2"/>
-          <path d="M38 12 L44 12" stroke="#D4A056" stroke-width="1" stroke-dasharray="2 2"/>
-          <rect x="28" y="44" width="8" height="10" stroke="#D4A056" stroke-width="1.5"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="20" width="20" height="16" rx="2" stroke="#38BDF8" stroke-width="1.5"/><line x1="10" y1="26" x2="22" y2="26" stroke="#38BDF8" stroke-width="1.5"/><line x1="10" y1="30" x2="18" y2="30" stroke="#38BDF8" stroke-width="1.5"/><rect x="38" y="28" width="20" height="16" rx="2" stroke="#38BDF8" stroke-width="1.5"/><line x1="42" y1="34" x2="54" y2="34" stroke="#38BDF8" stroke-width="1.5"/><line x1="42" y1="38" x2="50" y2="38" stroke="#38BDF8" stroke-width="1.5"/><line x1="27" y1="30" x2="31" y2="31.5" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="2 3"/><line x1="33" y1="34" x2="37" y2="35" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="2 3"/><line x1="29" y1="38" x2="35" y2="26" stroke="#D4A056" stroke-width="1.5"/></svg>
       </div>
-      <h3>The Power Plant</h3>
-      <div class="door-pct">~70% of founders</div>
-      <p>Built to generate deep, sustained energy &mdash; but only when the right work shows up. Their gut literally tells them yes or no. Force the wrong project and the engine stalls. Their front door opens by responding, not chasing.</p>
+      <h3>Not Enough Automations</h3>
+      <div class="door-pct">Costs you: your time</div>
+      <p>You&rsquo;re doing by hand what a system should do. You need training, and a system that runs the business. Then you get back to creating, and to your clients.</p>
     </div>
     <div class="door-card">
       <div class="door-icon">
-        <!-- Observatory SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="16" y="30" width="32" height="24" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <path d="M16 30 Q32 10 48 30" stroke="#38BDF8" stroke-width="1.5"/>
-          <!-- Dome window -->
-          <circle cx="32" cy="24" r="5" stroke="#E4EAF3" stroke-width="1.5"/>
-          <!-- Telescope line -->
-          <line x1="35" y1="22" x2="50" y2="12" stroke="#D4A056" stroke-width="1.5"/>
-          <circle cx="52" cy="11" r="2" stroke="#D4A056" stroke-width="1"/>
-          <!-- Windows -->
-          <rect x="22" y="36" width="8" height="8" stroke="#E4EAF3" stroke-width="1.5"/>
-          <rect x="34" y="36" width="8" height="8" stroke="#E4EAF3" stroke-width="1.5"/>
-          <line x1="16" y1="54" x2="48" y2="54" stroke="#38BDF8" stroke-width="1.5"/>
-          <rect x="28" y="46" width="8" height="8" stroke="#D4A056" stroke-width="1.5"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14 H48 L44 42 H20 Z" stroke="#38BDF8" stroke-width="1.5"/><line x1="14" y1="14" x2="50" y2="14" stroke="#38BDF8" stroke-width="1.5"/><line x1="27" y1="42" x2="29" y2="42" stroke="#F4F6FB" stroke-width="3"/><circle cx="28" cy="48" r="2.5" stroke="#D4A056" stroke-width="1.5"/><circle cx="33" cy="55" r="2.5" stroke="#D4A056" stroke-width="1.5"/><circle cx="25" cy="58" r="2" stroke="#D4A056" stroke-width="1.5"/><line x1="24" y1="24" x2="40" y2="24" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
       </div>
-      <h3>The Observatory</h3>
-      <div class="door-pct">~20% of founders</div>
-      <p>Built to see what others miss &mdash; the inefficiency, the misalignment, the better path. But their energy isn&rsquo;t designed for cold outreach. Their front door opens by invitation: when the right person recognizes their insight and asks for it.</p>
+      <h3>Money Slips Through the Gaps</h3>
+      <div class="door-pct">Costs you: your growth</div>
+      <p>You&rsquo;re so busy plugging holes, you&rsquo;re not building new revenue. That&rsquo;s where we work with you, one on one.</p>
     </div>
   </div>
 
   <div class="value-prop">
-    <p>Most founders build their brand by copying what worked for someone else &mdash; then wonder why it feels like a grind. Your blueprint shows you the rooms you actually live in: how you make decisions, where your energy renews, and what drains you before lunch. When your brand matches your wiring, you stop performing and start operating. Marketing gets simpler because you&rsquo;re saying what&rsquo;s true instead of what sounds right. Clients show up easier because the signal is clear. And the return isn&rsquo;t just revenue &mdash; it&rsquo;s time back, energy you keep, relationships that don&rsquo;t cost you, and a business that runs the way you actually think.</p>
-    <p class="value-prop-kicker">That&rsquo;s the ROI most people don&rsquo;t measure until they feel the difference.</p>
+    <p>We find the leaks. We build the system. We train you and your team to run it. One partner, 45 days.</p>
+    <p class="value-prop-kicker">What we build for: time back, and less money lost.</p>
   </div>
 
-  <p class="problem-pullquote">&ldquo;Push the wrong door and you burn out.<br>Find yours and the work starts to flow.&rdquo;</p>
-</section>
-
-<!-- =========== BUILD STAGES =========== -->
-<section class="section wrap" id="quiz">
-  <div class="section-center">
-    <div class="section-eyebrow">The Blueprint Assessment</div>
-    <h2 class="section-title">Which Build Stage Are You In?</h2>
-    <p class="section-subtitle">Eight questions, two minutes. Find the structural problem in your business &mdash; and the first renovation move.</p>
-  </div>
-
-  <div class="stage-grid">
-    <div class="stage-card">
-      <div class="stage-icon">
-        <!-- Overloaded Foundation: building with cracks -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="10" y="12" width="28" height="28" stroke="#38BDF8" stroke-width="1.5"/>
-          <line x1="10" y1="40" x2="38" y2="40" stroke="#38BDF8" stroke-width="2"/>
-          <!-- Cracks in foundation -->
-          <path d="M14 40 L16 44 L18 42 L20 46" stroke="#EF6B6B" stroke-width="1.5"/>
-          <path d="M30 40 L32 45 L34 43" stroke="#EF6B6B" stroke-width="1.5"/>
-          <!-- Weight arrows pressing down -->
-          <line x1="24" y1="4" x2="24" y2="10" stroke="#D4A056" stroke-width="1.5"/>
-          <polyline points="21,8 24,11 27,8" stroke="#D4A056" stroke-width="1.5"/>
-          <rect x="16" y="18" width="6" height="8" stroke="#E4EAF3" stroke-width="1"/>
-          <rect x="26" y="18" width="6" height="8" stroke="#E4EAF3" stroke-width="1"/>
-        </svg>
-      </div>
-      <div class="stage-num">STAGE 01</div>
-      <h3>Overloaded Foundation</h3>
-      <div class="stage-quote">&ldquo;Everything runs through me.&rdquo;</div>
-      <p>The whole building sits on one person&rsquo;s energy. Revenue is real, but the foundation cracks the moment you step away. Your blueprint shows which rooms are genuinely yours and which ones you&rsquo;re powering through sheer willpower. First move: separate your energy from the structure.</p>
-    </div>
-    <div class="stage-card">
-      <div class="stage-icon">
-        <!-- Missing Rooms: building with dashed empty rooms -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="10" y="10" width="28" height="30" stroke="#38BDF8" stroke-width="1.5"/>
-          <line x1="10" y1="40" x2="38" y2="40" stroke="#38BDF8" stroke-width="2"/>
-          <!-- Solid room -->
-          <rect x="14" y="14" width="10" height="10" stroke="#E4EAF3" stroke-width="1.5" fill="rgba(56,189,248,0.06)"/>
-          <!-- Dashed empty rooms -->
-          <rect x="26" y="14" width="10" height="10" stroke="#4E6585" stroke-width="1" stroke-dasharray="3 3"/>
-          <rect x="14" y="26" width="10" height="10" stroke="#4E6585" stroke-width="1" stroke-dasharray="3 3"/>
-          <rect x="26" y="26" width="10" height="10" stroke="#E4EAF3" stroke-width="1.5" fill="rgba(56,189,248,0.06)"/>
-          <!-- Question marks -->
-          <text x="31" y="21" text-anchor="middle" fill="#4E6585" font-family="Nunito Sans,sans-serif" font-size="7">?</text>
-          <text x="19" y="33" text-anchor="middle" fill="#4E6585" font-family="Nunito Sans,sans-serif" font-size="7">?</text>
-        </svg>
-      </div>
-      <div class="stage-num">STAGE 02</div>
-      <h3>Missing Rooms</h3>
-      <div class="stage-quote">&ldquo;I don&rsquo;t know who to hire.&rdquo;</div>
-      <p>Half the rooms in your building are empty or unfinished. Every hire feels like a clone of you &mdash; because you can only judge what you already know. Your blueprint maps which rooms are open (where you absorb other people&rsquo;s energy) and turns those gaps into your first-hire job description. First move: write the role around the rooms you don&rsquo;t have.</p>
-    </div>
-    <div class="stage-card">
-      <div class="stage-icon">
-        <!-- Crossed Wires: building with tangled connections -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="10" y="10" width="28" height="30" stroke="#38BDF8" stroke-width="1.5"/>
-          <line x1="10" y1="40" x2="38" y2="40" stroke="#38BDF8" stroke-width="2"/>
-          <rect x="14" y="14" width="8" height="8" stroke="#E4EAF3" stroke-width="1"/>
-          <rect x="26" y="14" width="8" height="8" stroke="#E4EAF3" stroke-width="1"/>
-          <rect x="14" y="28" width="8" height="8" stroke="#E4EAF3" stroke-width="1"/>
-          <rect x="26" y="28" width="8" height="8" stroke="#E4EAF3" stroke-width="1"/>
-          <!-- Tangled wires between rooms -->
-          <path d="M22 18 C26 22 22 26 30 32" stroke="#EF6B6B" stroke-width="1.5"/>
-          <path d="M26 18 C22 24 30 26 18 32" stroke="#D4A056" stroke-width="1.5"/>
-        </svg>
-      </div>
-      <div class="stage-num">STAGE 03</div>
-      <h3>Crossed Wires</h3>
-      <div class="stage-quote">&ldquo;My team isn&rsquo;t in sync.&rdquo;</div>
-      <p>Good people, but the wiring between rooms is tangled. When two people have open rooms in the same area, they amplify each other&rsquo;s energy without knowing it &mdash; that&rsquo;s the tension in your meetings. Your blueprint shows who conditions whom, and which decisions belong in which building. First move: map who owns which calls.</p>
-    </div>
-    <div class="stage-card">
-      <div class="stage-icon">
-        <!-- Wrong Front Door: building with wrong entrance highlighted -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="10" y="10" width="28" height="30" stroke="#38BDF8" stroke-width="1.5"/>
-          <line x1="10" y1="40" x2="38" y2="40" stroke="#38BDF8" stroke-width="2"/>
-          <!-- Wrong door on side -->
-          <rect x="4" y="22" width="6" height="12" stroke="#EF6B6B" stroke-width="1.5" fill="rgba(239,107,107,0.08)"/>
-          <!-- Arrows bouncing off -->
-          <path d="M0 28 L4 28" stroke="#EF6B6B" stroke-width="1.5"/>
-          <polyline points="2,26 0,28 2,30" stroke="#EF6B6B" stroke-width="1"/>
-          <!-- Right door (dimmed) -->
-          <rect x="20" y="32" width="8" height="8" stroke="#D4A056" stroke-width="1.5" fill="rgba(212,160,86,0.08)"/>
-          <rect x="16" y="16" width="6" height="6" stroke="#E4EAF3" stroke-width="1"/>
-          <rect x="26" y="16" width="6" height="6" stroke="#E4EAF3" stroke-width="1"/>
-        </svg>
-      </div>
-      <div class="stage-num">STAGE 04</div>
-      <h3>Wrong Front Door</h3>
-      <div class="stage-quote">&ldquo;Working hard, wrong results.&rdquo;</div>
-      <p>You&rsquo;re pushing clients through a side entrance instead of the front door. Your blueprint reveals your decision-making authority &mdash; the mechanism your body uses to say yes or no. When your sales, content, and marketing match that mechanism, the right clients find you. First move: look at how your last five best clients actually found you.</p>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-top:2rem;">
-    <a href="#quiz-start" class="btn btn-primary">Show Me My Build Stage</a>
-  </div>
-</section>
-
-<!-- =========== INSIDE THE BLUEPRINT (interactive building) =========== -->
-<section class="section wrap building-section" id="inside">
-  <div class="section-center">
-    <div class="section-eyebrow">Inside the Blueprint</div>
-    <h2 class="section-title">Walk Through Your Building</h2>
-    <p class="section-subtitle">Every building has nine rooms. Hover or tap any room to see what it handles.</p>
-  </div>
-
-  <div class="building-wrap">
-    <div class="building-svg-wrap" id="building-svg-wrap">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 500" width="340" height="500" fill="none" stroke-linecap="round" stroke-linejoin="round" id="building-svg">
-        <!-- Roof -->
-        <polyline points="30,70 170,10 310,70" stroke="#38BDF8" stroke-width="2"/>
-        <!-- Chimney accent -->
-        <rect x="240" y="30" width="14" height="30" stroke="#4E6585" stroke-width="1"/>
-        <!-- Outer walls -->
-        <rect x="40" y="70" width="260" height="370" stroke="#38BDF8" stroke-width="2" rx="2"/>
-
-        <!-- Row 1: Head, Mind, Throat -->
-        <g class="room-group" data-room="head">
-          <rect x="48" y="78" width="80" height="110" stroke="#E4EAF3" stroke-width="1.5" fill="rgba(56,189,248,0.08)" rx="1"/>
-          <text x="88" y="130" text-anchor="middle" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="11" font-weight="700">Head</text>
-        </g>
-        <g class="room-group" data-room="mind">
-          <rect x="132" y="78" width="80" height="110" stroke="#E4EAF3" stroke-width="1.5" stroke-dasharray="5 4" fill="none" rx="1"/>
-          <text x="172" y="130" text-anchor="middle" fill="#4E6585" font-family="Nunito Sans,sans-serif" font-size="11" font-weight="700">Mind</text>
-        </g>
-        <g class="room-group" data-room="throat">
-          <rect x="216" y="78" width="76" height="110" stroke="#E4EAF3" stroke-width="1.5" fill="rgba(56,189,248,0.08)" rx="1"/>
-          <text x="254" y="130" text-anchor="middle" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="11" font-weight="700">Throat</text>
-        </g>
-
-        <!-- Row 2: Identity, Heart, Spleen -->
-        <g class="room-group" data-room="identity">
-          <rect x="48" y="194" width="80" height="110" stroke="#E4EAF3" stroke-width="1.5" stroke-dasharray="5 4" fill="none" rx="1"/>
-          <text x="88" y="246" text-anchor="middle" fill="#4E6585" font-family="Nunito Sans,sans-serif" font-size="11" font-weight="700">Identity</text>
-        </g>
-        <g class="room-group" data-room="heart">
-          <rect x="132" y="194" width="80" height="110" stroke="#E4EAF3" stroke-width="1.5" fill="rgba(56,189,248,0.08)" rx="1"/>
-          <text x="172" y="246" text-anchor="middle" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="11" font-weight="700">Heart</text>
-        </g>
-        <g class="room-group" data-room="spleen">
-          <rect x="216" y="194" width="76" height="110" stroke="#E4EAF3" stroke-width="1.5" stroke-dasharray="5 4" fill="none" rx="1"/>
-          <text x="254" y="246" text-anchor="middle" fill="#4E6585" font-family="Nunito Sans,sans-serif" font-size="11" font-weight="700">Spleen</text>
-        </g>
-
-        <!-- Row 3: Solar Plexus, Sacral, Root -->
-        <g class="room-group" data-room="solar">
-          <rect x="48" y="310" width="80" height="110" stroke="#E4EAF3" stroke-width="1.5" fill="rgba(56,189,248,0.08)" rx="1"/>
-          <text x="88" y="358" text-anchor="middle" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="10" font-weight="700">Solar</text>
-          <text x="88" y="372" text-anchor="middle" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="10" font-weight="700">Plexus</text>
-        </g>
-        <g class="room-group" data-room="sacral">
-          <rect x="132" y="310" width="80" height="110" stroke="#E4EAF3" stroke-width="1.5" fill="rgba(56,189,248,0.08)" rx="1"/>
-          <text x="172" y="362" text-anchor="middle" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="11" font-weight="700">Sacral</text>
-        </g>
-        <g class="room-group" data-room="root">
-          <rect x="216" y="310" width="76" height="110" stroke="#E4EAF3" stroke-width="1.5" fill="rgba(56,189,248,0.08)" rx="1"/>
-          <text x="254" y="362" text-anchor="middle" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="11" font-weight="700">Root</text>
-        </g>
-
-        <!-- Front door at bottom -->
-        <rect x="150" y="400" width="40" height="36" stroke="#D4A056" stroke-width="2" rx="2" fill="rgba(212,160,86,0.12)"/>
-        <circle cx="183" cy="418" r="2.5" fill="#D4A056"/>
-        <text x="170" y="448" text-anchor="middle" fill="#D4A056" font-family="Bebas Neue,sans-serif" font-size="10" letter-spacing="0.15em">FRONT DOOR</text>
-
-        <!-- Foundation -->
-        <line x1="30" y1="460" x2="310" y2="460" stroke="#38BDF8" stroke-width="2" stroke-dasharray="8 4"/>
-        <text x="170" y="478" text-anchor="middle" fill="#4E6585" font-family="Bebas Neue,sans-serif" font-size="9" letter-spacing="0.2em">FOUNDATION</text>
-
-        <!-- "Defined" / "Open" legend -->
-        <rect x="48" y="486" width="12" height="8" stroke="#E4EAF3" stroke-width="1" fill="rgba(56,189,248,0.08)"/>
-        <text x="66" y="493" fill="#8BA0BE" font-family="Nunito Sans,sans-serif" font-size="8">= Defined (yours)</text>
-        <rect x="180" y="486" width="12" height="8" stroke="#4E6585" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
-        <text x="198" y="493" fill="#4E6585" font-family="Nunito Sans,sans-serif" font-size="8">= Open (window)</text>
-      </svg>
-      <div class="building-tooltip" id="building-tooltip"></div>
-    </div>
-  </div>
-
-  <p class="building-explanation">Every building has nine rooms. Some are yours &mdash; solid walls, consistent energy you can count on every day. Some are open &mdash; windows to the world, where you absorb and amplify other people&rsquo;s energy. That&rsquo;s not a flaw. It&rsquo;s how you read people. But when you don&rsquo;t know which rooms are open, you end up carrying furniture that isn&rsquo;t yours &mdash; other people&rsquo;s stress, urgency, and definition of success. The blueprint shows you the difference.</p>
-</section>
-
-<!-- =========== VIDEO SERIES =========== -->
-<section class="section wrap" id="learn">
-  <div class="section-center">
-    <div class="section-eyebrow">Tour the Building</div>
-    <h2 class="section-title">Walk Through Your Blueprint</h2>
-    <p class="section-subtitle">An eight-part series that walks you through your building &mdash; room by room, door by door, floor by floor.</p>
-  </div>
-
-  <div class="video-grid">
-    <div class="video-card">
-      <div class="video-arc-label arc-blueprint">The Blueprint</div>
-      <div class="video-card-header">
-        <span class="video-num">01</span>
-        <h4>The Building You Didn&rsquo;t Design</h4>
-        <span class="video-dur">1:50</span>
-      </div>
-      <p>Why most founders are running a building they never saw the plans for &mdash; and what changes when you do.</p>
-    </div>
-    <div class="video-card">
-      <div class="video-arc-label arc-blueprint">The Blueprint</div>
-      <div class="video-card-header">
-        <span class="video-num">02</span>
-        <h4>Your Address</h4>
-        <span class="video-dur">2:20</span>
-      </div>
-      <p>How precise your design is. Most readings get you to the street &mdash; we go all the way to the room.</p>
-    </div>
-    <div class="video-card">
-      <div class="video-arc-label arc-blueprint">The Blueprint</div>
-      <div class="video-card-header">
-        <span class="video-num">03</span>
-        <h4>Your Floor Plan</h4>
-        <span class="video-dur">2:40</span>
-      </div>
-      <p>Nine rooms. Which are yours, which are windows &mdash; and whose furniture you&rsquo;ve been carrying.</p>
-    </div>
-    <div class="video-card">
-      <div class="video-arc-label arc-blueprint">The Blueprint</div>
-      <div class="video-card-header">
-        <span class="video-num">04</span>
-        <h4>Your Front Door</h4>
-        <span class="video-dur">2:30</span>
-      </div>
-      <p>Five types of buildings, five front doors. How you&rsquo;re designed to decide and engage.</p>
-    </div>
-    <div class="video-card">
-      <div class="video-arc-label arc-blueprint">The Blueprint</div>
-      <div class="video-card-header">
-        <span class="video-num">05</span>
-        <h4>The Cornerstone</h4>
-        <span class="video-dur">2:10</span>
-      </div>
-      <p>Your life theme. The reason the building exists.</p>
-    </div>
-    <div class="video-card">
-      <div class="video-arc-label arc-renovation">The Renovation</div>
-      <div class="video-card-header">
-        <span class="video-num">06</span>
-        <h4>The Inspection</h4>
-        <span class="video-dur">2:20</span>
-      </div>
-      <p>Where the building is out of alignment. Which rooms need clearing out.</p>
-    </div>
-    <div class="video-card">
-      <div class="video-arc-label arc-renovation">The Renovation</div>
-      <div class="video-card-header">
-        <span class="video-num">07</span>
-        <h4>Your Second Brain</h4>
-        <span class="video-dur">2:30</span>
-      </div>
-      <p>An external system wired into the building. AI holds the context so you stay clear.</p>
-    </div>
-    <div class="video-card">
-      <div class="video-arc-label arc-activation">The Activation</div>
-      <div class="video-card-header">
-        <span class="video-num">08</span>
-        <h4>The Operating System</h4>
-        <span class="video-dur">2:50</span>
-      </div>
-      <p>Your decisions, your sales, your content, your crew &mdash; all running through the building as designed.</p>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-top:1.5rem;">
-    <a href="#book" class="btn btn-secondary">Talk to Kevin About Your Blueprint</a>
-  </div>
+  <p class="problem-pullquote">&ldquo;Humans shouldn&rsquo;t run businesses.<br>Humans build systems. Systems run the business.&rdquo;</p>
 </section>
 
 <!-- =========== HOW IT WORKS =========== -->
 <section class="section wrap" id="how">
   <div>
     <div class="section-eyebrow">The 45-Day Sprint</div>
-    <h2 class="section-title">How We Renovate</h2>
-    <p class="section-subtitle">Four phases. From surveying the building to running your business through every room.</p>
+    <h2 class="section-title">Four Steps. 45 Days.</h2>
+    <p class="section-subtitle">Out of your head. Into a system that runs.</p>
   </div>
 
   <div class="timeline">
@@ -1401,8 +1167,8 @@ svg.icon { flex-shrink: 0; }
       </div>
       <div class="phase-content">
         <div class="phase-days">Days 1&ndash;7</div>
-        <h3>Survey the Building</h3>
-        <p>We pull your full-depth blueprint &mdash; verified to the room, not just the street. You learn your building type (how your energy works), your front door (how you&rsquo;re designed to make decisions), which rooms are yours and which are open, and your cornerstone (the theme your life is built around). You leave knowing why some weeks drain you and others don&rsquo;t &mdash; even when the workload is the same.</p>
+        <h3>Map the Business</h3>
+        <p>Your offer. Your customer. Where your time and money go.</p>
         <span class="phase-deliverable">Blueprint Report</span>
       </div>
     </div>
@@ -1420,8 +1186,8 @@ svg.icon { flex-shrink: 0; }
       </div>
       <div class="phase-content">
         <div class="phase-days">Days 8&ndash;21</div>
-        <h3>Live in the Building</h3>
-        <p>Two weeks of walking through real rooms. Your blueprint tells us your decision authority &mdash; emotional, instinctive, gut-based, or willpower-driven &mdash; and we build your week around it. You test real business decisions through your front door: pricing calls, client meetings, content creation. You log what shifts when you stop forcing and start using the door that was always there.</p>
+        <h3>Test It for Real</h3>
+        <p>Real pricing calls. Real client meetings. We build your week around what works.</p>
         <span class="phase-deliverable">Founder Operating Manual</span>
       </div>
     </div>
@@ -1438,7 +1204,7 @@ svg.icon { flex-shrink: 0; }
       <div class="phase-content">
         <div class="phase-days">Days 22&ndash;35</div>
         <h3>Build the Crew</h3>
-        <p>We map what the business needs against what your building naturally carries. Your open rooms aren&rsquo;t weaknesses &mdash; they&rsquo;re the job descriptions for your next hires. If you&rsquo;re solo, we write a first-hire profile from the energy the role actually needs, not a generic job title. If you have a team, we map the whole neighborhood &mdash; who conditions whom, where signals cross, and which decisions belong in which building.</p>
+        <p>What you shouldn&rsquo;t be doing becomes your next hire. Got a team? We map who owns which decisions.</p>
         <span class="phase-deliverable">Crew Plan</span>
       </div>
     </div>
@@ -1457,130 +1223,9 @@ svg.icon { flex-shrink: 0; }
       </div>
       <div class="phase-content">
         <div class="phase-days">Days 36&ndash;45</div>
-        <h3>Renovate</h3>
-        <p>We load your blueprint, operating manual, and crew plan into an AI business brain that runs the way your building does. Then we build a 90-day renovation plan: your offer, your channels, your content rhythm &mdash; all matched to your front door.</p>
-        <span class="phase-deliverable">Business Brain + Renovation Plan</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =========== WHAT YOU GET =========== -->
-<section class="section wrap" id="get">
-  <div>
-    <div class="section-eyebrow">Everything Included</div>
-    <h2 class="section-title">What You Walk Away With</h2>
-  </div>
-
-  <div class="deliverables-grid">
-    <div class="deliverable">
-      <div class="deliverable-icon">
-        <!-- Blueprint scroll -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M8 6 L8 30 Q8 33 11 33 L28 33 L28 10 L24 10 L24 6 Z" stroke="#38BDF8" stroke-width="1.5"/>
-          <path d="M24 6 L28 10" stroke="#38BDF8" stroke-width="1.5"/>
-          <line x1="12" y1="16" x2="24" y2="16" stroke="#E4EAF3" stroke-width="1"/>
-          <line x1="12" y1="20" x2="22" y2="20" stroke="#E4EAF3" stroke-width="1"/>
-          <line x1="12" y1="24" x2="20" y2="24" stroke="#E4EAF3" stroke-width="1"/>
-          <circle cx="8" cy="6" r="2.5" stroke="#D4A056" stroke-width="1.5"/>
-        </svg>
-      </div>
-      <div>
-        <h4>Blueprint Report</h4>
-        <p>Your full-depth building plans in plain language: your energy type, your decision-making authority, all nine rooms (which are yours, which are open), your front door, and your cornerstone &mdash; the theme your life is built around. Not a label. An operating map.</p>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="deliverable-icon">
-        <!-- Open book with cross-section -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 8 L18 6 L32 8 L32 30 L18 28 L4 30 Z" stroke="#38BDF8" stroke-width="1.5"/>
-          <line x1="18" y1="6" x2="18" y2="28" stroke="#38BDF8" stroke-width="1"/>
-          <rect x="7" y="12" width="8" height="8" stroke="#E4EAF3" stroke-width="1"/>
-          <line x1="11" y1="12" x2="11" y2="20" stroke="#E4EAF3" stroke-width="0.8"/>
-          <line x1="7" y1="16" x2="15" y2="16" stroke="#E4EAF3" stroke-width="0.8"/>
-          <line x1="21" y1="13" x2="29" y2="13" stroke="#D4A056" stroke-width="1"/>
-          <line x1="21" y1="17" x2="28" y2="17" stroke="#D4A056" stroke-width="1"/>
-          <line x1="21" y1="21" x2="27" y2="21" stroke="#D4A056" stroke-width="1"/>
-        </svg>
-      </div>
-      <div>
-        <h4>Founder Operating Manual</h4>
-        <p>Your blueprint translated into daily rules: when to schedule deep work, how to make high-stakes decisions (and how long to wait before committing), what drains you fastest, and a one-page guide your team can read to get the best out of you.</p>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="deliverable-icon">
-        <!-- Connected buildings -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="14" width="12" height="16" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <rect x="22" y="10" width="12" height="20" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <line x1="14" y1="22" x2="22" y2="20" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="3 2"/>
-          <line x1="14" y1="26" x2="22" y2="24" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="3 2"/>
-          <polyline points="2,14 8,8 14,14" stroke="#38BDF8" stroke-width="1.5"/>
-          <polyline points="22,10 28,4 34,10" stroke="#38BDF8" stroke-width="1.5"/>
-        </svg>
-      </div>
-      <div>
-        <h4>Crew Plan</h4>
-        <p>A first-hire role profile built from your empty rooms, or a full neighborhood map with decision rights for teams.</p>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="deliverable-icon">
-        <!-- Building with transformation arrow -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="4" y="12" width="12" height="18" stroke="#4E6585" stroke-width="1.5" rx="1"/>
-          <line x1="4" y1="18" x2="16" y2="18" stroke="#4E6585" stroke-width="1"/>
-          <path d="M18 20 L22 20" stroke="#D4A056" stroke-width="2"/>
-          <polyline points="20,18 22,20 20,22" stroke="#D4A056" stroke-width="1.5"/>
-          <rect x="24" y="8" width="10" height="22" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <polyline points="24,8 29,4 34,8" stroke="#38BDF8" stroke-width="1.5"/>
-          <rect x="27" y="14" width="4" height="4" stroke="#E4EAF3" stroke-width="1"/>
-          <rect x="27" y="22" width="4" height="4" stroke="#D4A056" stroke-width="1"/>
-        </svg>
-      </div>
-      <div>
-        <h4>90-Day Renovation Plan</h4>
-        <p>Three structural changes with owners, measures, and a check-in schedule. The roadmap for rebuilding the next quarter.</p>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="deliverable-icon">
-        <!-- Building with brain/circuit merge -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="4" y="10" width="16" height="20" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <polyline points="4,10 12,4 20,10" stroke="#38BDF8" stroke-width="1.5"/>
-          <rect x="8" y="16" width="4" height="4" stroke="#E4EAF3" stroke-width="1"/>
-          <rect x="8" y="22" width="4" height="4" stroke="#E4EAF3" stroke-width="1"/>
-          <path d="M22 16 Q28 10 32 16 Q36 22 30 26 Q24 28 22 22 Z" stroke="#D4A056" stroke-width="1.5"/>
-          <line x1="20" y1="18" x2="23" y2="18" stroke="#D4A056" stroke-width="1" stroke-dasharray="2 1"/>
-          <line x1="20" y1="22" x2="23" y2="22" stroke="#D4A056" stroke-width="1" stroke-dasharray="2 1"/>
-          <circle cx="27" cy="17" r="1.5" stroke="#D4A056" stroke-width="1"/>
-          <circle cx="29" cy="22" r="1.5" stroke="#D4A056" stroke-width="1"/>
-        </svg>
-      </div>
-      <div>
-        <h4>Live Business Brain</h4>
-        <p>An AI-powered system loaded with your blueprint, your operating manual, and your crew plan. It knows your energy type, your front door, and your open rooms &mdash; so every offer, channel, and content idea it generates is already matched to how you&rsquo;re wired.</p>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="deliverable-icon">
-        <!-- Neighborhood of buildings -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="18" width="8" height="12" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <polyline points="2,18 6,14 10,18" stroke="#38BDF8" stroke-width="1.5"/>
-          <rect x="14" y="14" width="8" height="16" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <polyline points="14,14 18,10 22,14" stroke="#38BDF8" stroke-width="1.5"/>
-          <rect x="26" y="16" width="8" height="14" stroke="#38BDF8" stroke-width="1.5" rx="1"/>
-          <polyline points="26,16 30,12 34,16" stroke="#38BDF8" stroke-width="1.5"/>
-          <line x1="2" y1="32" x2="34" y2="32" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="3 2"/>
-        </svg>
-      </div>
-      <div>
-        <h4>1-Year Community Access</h4>
-        <p>A neighborhood of founders on the same path. Kevin&rsquo;s Skool community: live sessions, shared resources, ongoing support for a full year.</p>
+        <h3>Switch On the System</h3>
+        <p>It all goes into your AI business brain. Then a 90-day plan: offer, channels, content.</p>
+        <span class="phase-deliverable">Business Brain + 90-Day Plan</span>
       </div>
     </div>
   </div>
@@ -1589,15 +1234,15 @@ svg.icon { flex-shrink: 0; }
 <!-- =========== WHO IT'S FOR =========== -->
 <section class="section wrap" id="who">
   <div>
-    <div class="section-eyebrow">Is This Your Building?</div>
+    <div class="section-eyebrow">Is This You?</div>
     <h2 class="section-title">Who This Is Built For</h2>
   </div>
 
   <ul class="audience-list">
-    <li>Solopreneurs about to hire<span>Running every room solo, burning out, ready to fill the first empty one</span></li>
-    <li>Small founder-led teams<span>3 to 15 people. The wiring is crossed, but the building is worth renovating</span></li>
-    <li>Owner-operators<span>Real estate teams, agencies, studios, clinics. Solid structures ready for the right crew</span></li>
-    <li>Coaches and practitioners<span>Already open to frameworks. The fastest path to a building designed around how you work</span></li>
+    <li>Solopreneurs about to hire<span>Doing everything. Running out of you.</span></li>
+    <li>Small founder-led teams<span>3 to 15 people. Good crew, crossed wires.</span></li>
+    <li>Owner-operators<span>Real estate teams, agencies, studios, clinics.</span></li>
+    <li>Coaches and practitioners<span>Ready to build around how you work.</span></li>
   </ul>
 </section>
 
@@ -1619,14 +1264,14 @@ svg.icon { flex-shrink: 0; }
       <li>Async voice check-ins between calls</li>
       <li>Full-depth Blueprint Report</li>
       <li>Founder Operating Manual</li>
-      <li>Crew Plan (hiring profile or neighborhood map)</li>
-      <li>90-Day Renovation Plan</li>
+      <li>Crew Plan (hiring profile or team decision map)</li>
+      <li>90-Day Plan</li>
       <li>Live AI Business Brain, loaded and running</li>
       <li>1-year Skool community access</li>
       <li>90-day post-sprint review</li>
     </ul>
 
-    <a href="#book" class="btn btn-primary" style="width:100%; justify-content:center;">Book Your Blueprint Call</a>
+    <a href="#book" class="btn btn-primary" style="width:100%; justify-content:center;">Book Your Free Call</a>
 
     <div class="pricing-terms">Pay in full or 50% deposit up front, balance at completion. Stripe only.<br>Full refund available before Session 2.</div>
   </div>
@@ -1641,28 +1286,24 @@ svg.icon { flex-shrink: 0; }
 
   <div class="faq-list">
     <div class="faq-item open">
-      <button class="faq-q">Is this astrology?</button>
-      <div class="faq-a">Human Design uses your birth time and place to map how your body processes energy and makes decisions. It tells you which of the nine rooms are consistently yours (where you can rely on your own energy) and which are open (where you absorb and amplify the environment). It also reveals your front door &mdash; the specific mechanism you&rsquo;re designed to use when saying yes or no. We treat it as engineering data, not a belief system. The business brain works with or without the chart &mdash; the design layer gives us a faster, more accurate starting point than personality tests or guesswork.</div>
+      <button class="faq-q">I already use ChatGPT. Why do I need this?</button>
+      <div class="faq-a">Good. The question is whether your knowledge, your offer and your daily work are organized around it. That&rsquo;s the build. Then we train you and your team to run it.</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q">Do I need my exact birth time?</button>
-      <div class="faq-a">An exact time is ideal &mdash; a birth certificate time is best. At the deepest layers of your design, the sun crosses one measurement in about 38 minutes, so precision matters for the most detailed rooms. If your time is rounded or uncertain, we flag which floors are high-confidence and which should be verified through experience.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">Do I have to believe in it for it to work?</button>
-      <div class="faq-a">No. We present everything as a lens, not a prediction. The business changes we build &mdash; your operating manual, your hiring profile, your decision process &mdash; are practical and measurable. The blueprint gives us a better starting hypothesis than guesswork. You test it over 45 days and keep what works.</div>
+      <button class="faq-q">Can you guarantee results?</button>
+      <div class="faq-a">No. Your market and your team are outside our control. We commit to the build, the training and the 90-day plan.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">What if I&rsquo;m not hiring yet?</button>
-      <div class="faq-a">The sprint works for solo builders too. Phases 1 and 2 focus entirely on you: how you work, decide, and recover. Phase 3 builds a role profile from your empty rooms, so when you are ready to hire, you know exactly which room to fill. And the business brain runs whether your building has one occupant or fifteen.</div>
+      <div class="faq-a">That&rsquo;s fine. The first two phases are all about you. The crew plan waits until you&rsquo;re ready. The business brain works for one person or fifteen.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">What happens after 45 days?</button>
-      <div class="faq-a">You walk away with a live business brain and a 90-day renovation plan. At day 90 we do a building inspection: what shifted in your hours, energy, decisions, and pipeline. The Skool community keeps you connected for a full year. And the blueprint doesn&rsquo;t expire &mdash; the plans are yours.</div>
+      <div class="faq-a">You have a live business brain and a 90-day plan. At day 90 we review what changed. The community runs a full year.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">What about my team?</button>
-      <div class="faq-a">The core sprint surveys one founder&rsquo;s building. If you have a team you want mapped, the Crew Build phase includes up to five buildings. We map the neighborhood: how the structures connect, where the wiring crosses, and who owns which rooms. For larger groups, mention it on the call and we&rsquo;ll scope it.</div>
+      <div class="faq-a">The sprint covers one founder. The crew phase can cover up to five team members. More than that? Tell us on the call.</div>
     </div>
   </div>
 </section>
@@ -1671,8 +1312,8 @@ svg.icon { flex-shrink: 0; }
 <section class="section book-section wrap" id="book">
   <div class="section-center">
     <div class="section-eyebrow">Free &middot; 20 Minutes</div>
-    <h2 class="section-title">Book a Blueprint Call</h2>
-    <p class="section-subtitle">Tell Kevin what you&rsquo;re building. He&rsquo;ll tell you which rooms are running your show &mdash; and which ones are running you.</p>
+    <h2 class="section-title">Book a Free Call</h2>
+    <p class="section-subtitle">Tell Kevin what&rsquo;s stuck. He&rsquo;ll show you where a system fits.</p>
   </div>
 
   <div class="book-card">
@@ -1698,10 +1339,10 @@ svg.icon { flex-shrink: 0; }
       <line x1="78" y1="25" x2="92" y2="25" stroke="#E4EAF3" stroke-width="0.8"/>
     </svg>
   </div>
-  <h2>Stop renovating with<br>someone else&rsquo;s <em>plans.</em></h2>
-  <p>Your building has original plans. Let&rsquo;s read them together.</p>
+  <h2>Stop running the business.<br>Build the <em>system.</em></h2>
+  <p>You pay either way. In hours and lost money, or for a system that runs it.</p>
   <div class="hero-ctas">
-    <a href="#book" class="btn btn-primary">Book a Free Blueprint Call</a>
+    <a href="#book" class="btn btn-primary">Book a Free Call</a>
     <a href="quiz/" class="btn btn-secondary">Take the Assessment First</a>
   </div>
 </section>
@@ -1727,58 +1368,4 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
   });
 });
 
-// Interactive building rooms tooltip
-var roomData = {
-  head: { name: 'Head', desc: 'Inspiration and questions — where ideas start.' },
-  mind: { name: 'Mind', desc: 'Processing and opinions — how you think things through.' },
-  throat: { name: 'Throat', desc: 'Communication and action — how things get expressed and done.' },
-  identity: { name: 'Identity', desc: 'Direction and love — your sense of self and where you’re going.' },
-  heart: { name: 'Heart', desc: 'Willpower and value — what you commit to and what you charge.' },
-  spleen: { name: 'Spleen', desc: 'Instinct and timing — your body’s in-the-moment knowing.' },
-  solar: { name: 'Solar Plexus', desc: 'Emotions and clarity — how feelings move through decisions.' },
-  sacral: { name: 'Sacral', desc: 'Life force and work capacity — your engine for sustained effort.' },
-  root: { name: 'Root', desc: 'Pressure and drive — the fuel that gets you moving.' }
-};
-
-var tooltip = document.getElementById('building-tooltip');
-var svgWrap = document.getElementById('building-svg-wrap');
-var activeRoom = null;
-
-document.querySelectorAll('.room-group').forEach(function(group) {
-  function showTip(e) {
-    var room = group.getAttribute('data-room');
-    if (!roomData[room]) return;
-    activeRoom = room;
-    tooltip.innerHTML = '<strong>' + roomData[room].name + '</strong>' + roomData[room].desc;
-    tooltip.classList.add('visible');
-
-    var rect = group.querySelector('rect');
-    var svgEl = document.getElementById('building-svg');
-    var svgRect = svgEl.getBoundingClientRect();
-    var wrapRect = svgWrap.getBoundingClientRect();
-
-    var roomRect = rect.getBoundingClientRect();
-    var cx = roomRect.left + roomRect.width / 2 - wrapRect.left;
-    var cy = roomRect.top - wrapRect.top - 8;
-
-    tooltip.style.left = Math.max(8, Math.min(cx - 120, wrapRect.width - 248)) + 'px';
-    tooltip.style.top = (cy - tooltip.offsetHeight) + 'px';
-  }
-
-  function hideTip() {
-    activeRoom = null;
-    tooltip.classList.remove('visible');
-  }
-
-  group.addEventListener('mouseenter', showTip);
-  group.addEventListener('mouseleave', hideTip);
-  group.addEventListener('click', function(e) {
-    var room = group.getAttribute('data-room');
-    if (activeRoom === room) {
-      hideTip();
-    } else {
-      showTip(e);
-    }
-  });
-});
 </script>
