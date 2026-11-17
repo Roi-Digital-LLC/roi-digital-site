@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://roidigital.ai/quiz/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <title>Blueprint Assessment</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 
@@ -301,6 +308,8 @@ a { color: var(--accent); }
   margin: 0.75rem 0 0;
 }
 </style>
+</head>
+<body>
 
 <div class="quiz-wrap">
   <!-- INTRO -->
@@ -581,11 +590,11 @@ function showResults() {
 
   html += '<div class="result-cta">';
   if (track === 'hot') {
-    html += '<a href="#book" class="btn btn-primary btn-full">Walk Through Your Full Blueprint</a>';
+    html += '<a href="/#book" class="btn btn-primary btn-full">Walk Through Your Full Blueprint</a>';
   } else if (track === 'warm') {
-    html += '<a href="#book" class="btn btn-primary btn-full">See How You’re Built to Scale</a>';
+    html += '<a href="/#book" class="btn btn-primary btn-full">See How You’re Built to Scale</a>';
   } else {
-    html += '<a href="#book" class="btn btn-primary btn-full">Map Your Next 45 Days</a>';
+    html += '<a href="/#book" class="btn btn-primary btn-full">Map Your Next 45 Days</a>';
   }
   html += '<p>Book a free 20-minute Blueprint Call with Kevin.</p>';
   html += '</div>';
@@ -597,3 +606,5 @@ function showResults() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
+</body>
+</html>

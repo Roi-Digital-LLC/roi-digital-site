@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The Blueprint Sprint: a 45-day sprint that rebuilds your business around how you are actually wired. Book a free 20-minute Blueprint Call.">
+<link rel="canonical" href="https://roidigital.ai/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>ROI Digital Consulting</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 
@@ -278,6 +286,23 @@ svg.icon { flex-shrink: 0; }
   margin: 1.25rem auto 0;
   text-wrap: balance;
   line-height: 1.8;
+}
+
+.hero-video {
+  max-width: 880px;
+  margin: 2.25rem auto 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #070E1B;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.hero-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 .hero-building {
@@ -967,6 +992,8 @@ svg.icon { flex-shrink: 0; }
   .hero-building svg { max-width: 280px; height: auto; }
 }
 </style>
+</head>
+<body>
 
 <!-- =========== NAV =========== -->
 <nav class="nav">
@@ -983,7 +1010,11 @@ svg.icon { flex-shrink: 0; }
 <header class="hero wrap">
   <div class="hero-eyebrow">The Blueprint Sprint &middot; 45 Days</div>
   <h1>Your business is the house.<br>You are the <em>blueprint.</em></h1>
-  <p class="hero-body">Most founders are running a building they never designed &mdash; pushing through the wrong door, carrying furniture that isn&rsquo;t theirs, wondering why the rooms feel empty. We read the original plans and renovate from the inside out.</p>
+  <div class="hero-video">
+    <video controls playsinline preload="metadata" poster="video/blueprint-sprint-poster.jpg">
+      <source src="video/blueprint-sprint.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <!-- Hero building cross-section SVG -->
   <div class="hero-building">
@@ -1782,3 +1813,5 @@ document.querySelectorAll('.room-group').forEach(function(group) {
   });
 });
 </script>
+</body>
+</html>
