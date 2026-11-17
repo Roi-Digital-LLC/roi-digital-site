@@ -1056,6 +1056,11 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 #invest .hero-ctas { margin-top: 1.5rem; }
 @media (max-width: 860px) { .pricing-grid { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; } }
 @media (max-width: 600px) { .pricing-founding { font-size: 3rem; } .pricing-badge { font-size: 1rem; } .pricing-note { font-size: 1.2rem; } }
+/* — Booking calendar — */
+.book-calendar { max-width: 1000px; margin: 2rem auto 0; }
+.calendly-inline-widget { min-width: 300px; height: 720px; border-radius: 10px; overflow: hidden; }
+.book-calendar .book-or { text-align: center; }
+@media (max-width: 600px) { .calendly-inline-widget { height: 1000px; margin-inline: -8px; } }
 </style>
 
 <!-- =========== NAV =========== -->
@@ -1178,7 +1183,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       </div>
       <div class="phase-content">
         <div class="phase-days">Step 1 &middot; Free</div>
-        <h3>20-Minute Assessment</h3>
+        <h3>30-Minute Assessment</h3>
         <p>We identify three areas where AI could increase revenue, cut repetitive work or speed up your response times.</p>
         <span class="phase-deliverable">A diagnostic, not a promise of savings</span>
       </div>
@@ -1319,17 +1324,23 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 <!-- =========== BOOK A CALL =========== -->
 <section class="section book-section wrap" id="book">
   <div class="section-center">
-    <div class="section-eyebrow">Free &middot; 20 Minutes</div>
+    <div class="section-eyebrow">Free &middot; 30 Minutes</div>
     <h2 class="section-title">Book Your AI Assessment</h2>
     <p class="section-subtitle">No tech jargon. No software pitch. Just three areas where AI could make a measurable difference.</p>
   </div>
 
+  <div class="book-calendar">
+    <div class="calendly-inline-widget" data-url="https://calendly.com/roidigital/30min?hide_gdpr_banner=1"></div>
+    <p class="book-or"><a href="https://calendly.com/roidigital/30min" target="_blank" rel="noopener">Open the calendar in a new tab</a></p>
+  </div>
+
   <div class="book-card">
     <div class="book-name">Kevin Mullaney</div>
-    <div class="book-detail">ROI Digital Consulting</div>
-    <a href="tel:+15182567205" class="btn btn-primary">Call Kevin Now</a>
+    <div class="book-detail">Rather talk now?</div>
+    <a href="tel:+15182567205" class="btn btn-secondary">Call Kevin Now</a>
     <p class="book-or">Not ready to talk? <a href="quiz/">Answer five quick questions first.</a></p>
   </div>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </section>
 
 <!-- =========== FINAL CTA =========== -->
