@@ -5,7 +5,7 @@
 <title>ROI Digital Consulting</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap">
 
 <style>
 /* ROI Digital — The Blueprint Sprint landing page
@@ -114,7 +114,7 @@ body::after {
 }
 
 h1, h2, h3, .display { font-family: 'Bebas Neue', 'Impact', sans-serif; letter-spacing: 0.04em; line-height: 1.1; }
-.serif { font-family: 'Lora', Georgia, serif; }
+.serif { font-family: 'Nunito Sans', system-ui, sans-serif; }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { color: var(--accent-hover); }
@@ -275,7 +275,7 @@ svg.icon { flex-shrink: 0; }
 }
 
 .hero-body {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', system-ui, sans-serif;
   font-size: clamp(0.95rem, 2.5vw, 1.15rem);
   color: var(--fg-muted);
   max-width: 58ch;
@@ -373,7 +373,7 @@ svg.icon { flex-shrink: 0; }
 }
 
 .problem-pullquote {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', system-ui, sans-serif;
   font-style: italic;
   font-size: 1.15rem;
   color: var(--gold);
@@ -421,7 +421,7 @@ svg.icon { flex-shrink: 0; }
 }
 
 .stage-quote {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', system-ui, sans-serif;
   font-style: italic;
   font-size: 0.92rem;
   color: var(--gold);
@@ -482,7 +482,7 @@ svg.icon { flex-shrink: 0; }
   margin-bottom: 0.2rem;
 }
 .building-explanation {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', system-ui, sans-serif;
   font-size: 1rem;
   color: var(--fg-muted);
   max-width: 56ch;
@@ -851,7 +851,7 @@ svg.icon { flex-shrink: 0; }
 }
 
 .value-prop p {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   color: var(--fg);
@@ -889,7 +889,7 @@ svg.icon { flex-shrink: 0; }
 }
 
 .book-card .book-detail {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', system-ui, sans-serif;
   color: var(--fg-muted);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
@@ -921,7 +921,7 @@ svg.icon { flex-shrink: 0; }
 }
 
 .final-cta p {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', system-ui, sans-serif;
   font-size: 1.05rem;
   color: var(--fg-muted);
   max-width: 48ch;
@@ -1045,6 +1045,14 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .final-cta p { font-size: 1.45rem; line-height: 1.4; }
   .footer, .footer a { font-size: 1rem; }
 }
+/* — Stripped down: two fonts, less to read — */
+.problem-pullquote { font-family: 'Bebas Neue', sans-serif; font-style: normal; letter-spacing: 0.02em; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.05; margin-top: 3.5rem; }
+.phase-content p { margin-bottom: 0; }
+.final-cta { scroll-margin-top: 80px; }
+@media (max-width: 600px) {
+  .hero-building { display: none; }
+  .problem-pullquote { font-size: 2.3rem; }
+}
 </style>
 
 <!-- =========== NAV =========== -->
@@ -1062,8 +1070,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 <header class="hero wrap">
   <div class="hero-eyebrow">The Blueprint Sprint &middot; 30&ndash;45 Days</div>
   <h1>Your business runs on you.<br>It needs a <em>system.</em></h1>
-  <p class="hero-body">In 30 to 45 days, we AI-ify your business: a clear offer, an AI brain that knows what you know, and the tools to run it. Built to give you your time back.</p>
-
+  <p class="hero-body">In 30 to 45 days, we AI-ify your business. Built to give you your time back.</p>
   <!-- Hero building cross-section SVG -->
   <div class="hero-building">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" width="320" height="360" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -1107,7 +1114,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   <div class="section-center">
     <div class="section-eyebrow">The Real Bottleneck</div>
     <h2 class="section-title">Everything Still Runs Through You</h2>
-    <p class="section-subtitle">Nothing moves unless you move it. That&rsquo;s a missing system. It shows up in three places.</p>
   </div>
 
   <div class="problem-grid">
@@ -1116,30 +1122,22 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 54 V46 C14 42 11 34 13 26 C15 15 24 9 34 10 C45 11 52 19 52 29 L56 37 H52 V44 C52 47 50 48 47 48 H42 V54" stroke="#38BDF8" stroke-width="1.5"/><rect x="24" y="20" width="16" height="13" rx="1" stroke="#D4A056" stroke-width="1.5"/><line x1="27" y1="24.5" x2="37" y2="24.5" stroke="#D4A056" stroke-width="1.5"/><line x1="27" y1="28.5" x2="34" y2="28.5" stroke="#D4A056" stroke-width="1.5"/></svg>
       </div>
       <h3>It All Lives in Your Head</h3>
-      <div class="door-pct">Costs you: your message</div>
-      <p>So your brand never makes it out. If the message is off, more marketing won&rsquo;t fix it. It all falls flat.</p>
+      <p>So your brand never makes it out.</p>
     </div>
     <div class="door-card">
       <div class="door-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="20" width="20" height="16" rx="2" stroke="#38BDF8" stroke-width="1.5"/><line x1="10" y1="26" x2="22" y2="26" stroke="#38BDF8" stroke-width="1.5"/><line x1="10" y1="30" x2="18" y2="30" stroke="#38BDF8" stroke-width="1.5"/><rect x="38" y="28" width="20" height="16" rx="2" stroke="#38BDF8" stroke-width="1.5"/><line x1="42" y1="34" x2="54" y2="34" stroke="#38BDF8" stroke-width="1.5"/><line x1="42" y1="38" x2="50" y2="38" stroke="#38BDF8" stroke-width="1.5"/><line x1="27" y1="30" x2="31" y2="31.5" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="2 3"/><line x1="33" y1="34" x2="37" y2="35" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="2 3"/><line x1="29" y1="38" x2="35" y2="26" stroke="#D4A056" stroke-width="1.5"/></svg>
       </div>
       <h3>Not Enough Automations</h3>
-      <div class="door-pct">Costs you: your time</div>
-      <p>You&rsquo;re doing by hand what a system should do. You need training, and a system that runs the business. Then you get back to creating, and to your clients.</p>
+      <p>You&rsquo;re doing by hand what a system should do.</p>
     </div>
     <div class="door-card">
       <div class="door-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14 H48 L44 42 H20 Z" stroke="#38BDF8" stroke-width="1.5"/><line x1="14" y1="14" x2="50" y2="14" stroke="#38BDF8" stroke-width="1.5"/><line x1="27" y1="42" x2="29" y2="42" stroke="#F4F6FB" stroke-width="3"/><circle cx="28" cy="48" r="2.5" stroke="#D4A056" stroke-width="1.5"/><circle cx="33" cy="55" r="2.5" stroke="#D4A056" stroke-width="1.5"/><circle cx="25" cy="58" r="2" stroke="#D4A056" stroke-width="1.5"/><line x1="24" y1="24" x2="40" y2="24" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
       </div>
       <h3>Money Slips Through the Gaps</h3>
-      <div class="door-pct">Costs you: your growth</div>
-      <p>You&rsquo;re so busy plugging holes, you&rsquo;re not building new revenue. That&rsquo;s where we work with you, one on one.</p>
+      <p>You&rsquo;re plugging holes, not building revenue.</p>
     </div>
-  </div>
-
-  <div class="value-prop">
-    <p>We find the leaks. We build the system. We train you and your team to run it. One partner, 30 to 45 days.</p>
-    <p class="value-prop-kicker">What we build for: time back, and less money lost.</p>
   </div>
 
   <p class="problem-pullquote">&ldquo;Humans shouldn&rsquo;t run businesses.<br>Humans build systems. Systems run the business.&rdquo;</p>
@@ -1148,9 +1146,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 <!-- =========== HOW IT WORKS =========== -->
 <section class="section wrap" id="how">
   <div>
-    <div class="section-eyebrow">The Sprint</div>
     <h2 class="section-title">Four Steps. 30&ndash;45 Days.</h2>
-    <p class="section-subtitle">Out of your head. Into a system that runs.</p>
   </div>
 
   <div class="timeline">
@@ -1168,8 +1164,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       <div class="phase-content">
         <div class="phase-days">Step 1</div>
         <h3>Map the Business</h3>
-        <p>Your offer. Your customer. Where your time and money go.</p>
-        <span class="phase-deliverable">Blueprint Report</span>
+        <p>Where your time and money go.</p>
       </div>
     </div>
     <div class="phase">
@@ -1187,8 +1182,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       <div class="phase-content">
         <div class="phase-days">Step 2</div>
         <h3>Test It for Real</h3>
-        <p>Real pricing calls. Real client meetings. We build your week around what works.</p>
-        <span class="phase-deliverable">Founder Operating Manual</span>
+        <p>Real calls. Real clients.</p>
       </div>
     </div>
     <div class="phase">
@@ -1204,8 +1198,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       <div class="phase-content">
         <div class="phase-days">Step 3</div>
         <h3>Build the Crew</h3>
-        <p>What you shouldn&rsquo;t be doing becomes your next hire. Got a team? We map who owns which decisions.</p>
-        <span class="phase-deliverable">Crew Plan</span>
+        <p>Who does what, so it isn&rsquo;t all you.</p>
       </div>
     </div>
     <div class="phase">
@@ -1224,50 +1217,28 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       <div class="phase-content">
         <div class="phase-days">Step 4</div>
         <h3>Switch On the System</h3>
-        <p>It all goes into your AI business brain. Then a 90-day plan: offer, channels, content.</p>
-        <span class="phase-deliverable">Business Brain + 90-Day Plan</span>
+        <p>Your AI business brain goes live.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- =========== WHO IT'S FOR =========== -->
-<section class="section wrap" id="who">
-  <div>
-    <div class="section-eyebrow">Is This You?</div>
-    <h2 class="section-title">Who This Is Built For</h2>
-  </div>
-
-  <ul class="audience-list">
-    <li>Solopreneurs about to hire<span>Doing everything. Running out of you.</span></li>
-    <li>Small founder-led teams<span>3 to 15 people. Good crew, crossed wires.</span></li>
-    <li>Owner-operators<span>Real estate teams, agencies, studios, clinics.</span></li>
-    <li>Coaches and practitioners<span>Ready to build around how you work.</span></li>
-  </ul>
-</section>
-
 <!-- =========== PRICING =========== -->
 <section class="section wrap" id="invest">
   <div class="section-center">
-    <div class="section-eyebrow">Investment</div>
     <h2 class="section-title">The Blueprint Sprint</h2>
   </div>
 
   <div class="pricing-card">
     <div class="pricing-badge">Target: 30&ndash;45 Days</div>
     <div class="pricing-founding">$6,670</div>
-    <div class="pricing-note">One price. Everything below is included.</div>
 
     <ul class="pricing-includes">
-      <li>6 one-on-one sessions</li>
-      <li>Async voice check-ins between calls</li>
-      <li>Full-depth Blueprint Report</li>
-      <li>Founder Operating Manual</li>
-      <li>Crew Plan (hiring profile or team decision map)</li>
-      <li>90-Day Plan</li>
-      <li>Live AI Business Brain, loaded and running</li>
-      <li>1-year Skool community access</li>
-      <li>90-day post-sprint review</li>
+      <li>6 one-on-one sessions, plus voice check-ins</li>
+      <li>Blueprint Report and Operating Manual</li>
+      <li>Crew Plan and 90-Day Plan, with a 90-day review</li>
+      <li>Live AI Business Brain</li>
+      <li>1 year of community access</li>
     </ul>
 
     <a href="https://calendly.com/roidigital/30min" class="btn btn-primary" style="width:100%; justify-content:center;">Book Your Free Call</a>
@@ -1279,48 +1250,22 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 <!-- =========== FAQ =========== -->
 <section class="section wrap" id="faq">
   <div>
-    <div class="section-eyebrow">Common Questions</div>
     <h2 class="section-title">FAQ</h2>
   </div>
 
   <div class="faq-list">
-    <div class="faq-item open">
+    <div class="faq-item">
       <button class="faq-q">I already use ChatGPT. Why do I need this?</button>
-      <div class="faq-a">Good. The question is whether your knowledge, your offer and your daily work are organized around it. That&rsquo;s the build. Then we train you and your team to run it.</div>
+      <div class="faq-a">Good. The question is whether your business is organized around it. That&rsquo;s the build.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">Can you guarantee results?</button>
-      <div class="faq-a">No. Your market and your team are outside our control. We commit to the build, the training and the 90-day plan.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">What if I&rsquo;m not hiring yet?</button>
-      <div class="faq-a">That&rsquo;s fine. The first two phases are all about you. The crew plan waits until you&rsquo;re ready. The business brain works for one person or fifteen.</div>
+      <div class="faq-a">No. We commit to the build, the training and the 90-day plan.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">What happens after the sprint?</button>
-      <div class="faq-a">You have a live business brain and a 90-day plan. At day 90 we review what changed. The community runs a full year.</div>
+      <div class="faq-a">You have a live business brain and a 90-day plan. At day 90 we review what changed.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q">What about my team?</button>
-      <div class="faq-a">The sprint covers one founder. The crew phase can cover up to five team members. More than that? Tell us on the call.</div>
-    </div>
-  </div>
-</section>
-
-<!-- =========== BOOK A CALL =========== -->
-<section class="section book-section wrap" id="book">
-  <div class="section-center">
-    <div class="section-eyebrow">Free &middot; 30 Minutes</div>
-    <h2 class="section-title">Book a Free Call</h2>
-    <p class="section-subtitle">Tell Kevin what&rsquo;s stuck. He&rsquo;ll show you where a system fits.</p>
-  </div>
-
-  <div class="book-card">
-    <div class="book-name">Kevin Mullaney</div>
-    <div class="book-detail">Blueprint Sprint &middot; ROI Digital Consulting</div>
-    <a href="https://calendly.com/roidigital/30min" class="btn btn-primary">Pick a Time</a>
-    <a href="tel:+15182567205" class="btn btn-secondary">Call Kevin Now</a>
-    <p class="book-or">Not ready to talk? <a href="quiz/">Take the 2-minute assessment first.</a></p>
   </div>
 </section>
 
@@ -1340,10 +1285,9 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     </svg>
   </div>
   <h2>Stop running the business.<br>Build the <em>system.</em></h2>
-  <p>You pay either way. In hours and lost money, or for a system that runs it.</p>
   <div class="hero-ctas">
     <a href="https://calendly.com/roidigital/30min" class="btn btn-primary">Book a Free Call</a>
-    <a href="quiz/" class="btn btn-secondary">Take the Assessment First</a>
+    <a href="tel:+15182567205" class="btn btn-secondary">Call Kevin</a>
   </div>
 </section>
 
