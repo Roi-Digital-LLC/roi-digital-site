@@ -1053,6 +1053,15 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .hero-building { display: none; }
   .problem-pullquote { font-size: 2.3rem; }
 }
+.hero-body-2 { margin-top: 0.9rem; }
+.quote-by { text-align: center; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-muted); margin: 1rem 0 0; }
+#how .section-subtitle { max-width: 62ch; }
+.sendoff { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.05; color: var(--gold); margin: 3rem 0 0; letter-spacing: 0.02em; }
+.section-title em { font-style: normal; color: var(--gold); }
+.after-sprint { margin-top: 2.5rem; max-width: 62ch; }
+.after-sprint h3 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.after-sprint p { font-size: 1.2rem; line-height: 1.5; color: var(--fg-muted); margin: 0; }
+@media (max-width: 600px) { .after-sprint h3 { font-size: 1.9rem; } .after-sprint p { font-size: 1.35rem; line-height: 1.45; } }
 </style>
 
 <!-- =========== NAV =========== -->
@@ -1071,6 +1080,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   <div class="hero-eyebrow">The Blueprint Sprint &middot; 30&ndash;45 Days</div>
   <h1>Your business runs on you.<br>It needs a <em>system.</em></h1>
   <p class="hero-body">In 30 to 45 days, we AI-ify your business. Built to give you your time back.</p>
+  <p class="hero-body hero-body-2">We automate systems, audit your cash flows, create potential new revenue streams, and make your staff more efficient. Even if that&rsquo;s just you.</p>
   <!-- Hero building cross-section SVG -->
   <div class="hero-building">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" width="320" height="360" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -1122,31 +1132,34 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 54 V46 C14 42 11 34 13 26 C15 15 24 9 34 10 C45 11 52 19 52 29 L56 37 H52 V44 C52 47 50 48 47 48 H42 V54" stroke="#38BDF8" stroke-width="1.5"/><rect x="24" y="20" width="16" height="13" rx="1" stroke="#D4A056" stroke-width="1.5"/><line x1="27" y1="24.5" x2="37" y2="24.5" stroke="#D4A056" stroke-width="1.5"/><line x1="27" y1="28.5" x2="34" y2="28.5" stroke="#D4A056" stroke-width="1.5"/></svg>
       </div>
       <h3>It All Lives in Your Head</h3>
-      <p>So your brand never makes it out.</p>
+      <p>So your brand never makes it out. Our goal is to build a brain for your business, so you can get your creative flow back.</p>
     </div>
     <div class="door-card">
       <div class="door-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="20" width="20" height="16" rx="2" stroke="#38BDF8" stroke-width="1.5"/><line x1="10" y1="26" x2="22" y2="26" stroke="#38BDF8" stroke-width="1.5"/><line x1="10" y1="30" x2="18" y2="30" stroke="#38BDF8" stroke-width="1.5"/><rect x="38" y="28" width="20" height="16" rx="2" stroke="#38BDF8" stroke-width="1.5"/><line x1="42" y1="34" x2="54" y2="34" stroke="#38BDF8" stroke-width="1.5"/><line x1="42" y1="38" x2="50" y2="38" stroke="#38BDF8" stroke-width="1.5"/><line x1="27" y1="30" x2="31" y2="31.5" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="2 3"/><line x1="33" y1="34" x2="37" y2="35" stroke="#D4A056" stroke-width="1.5" stroke-dasharray="2 3"/><line x1="29" y1="38" x2="35" y2="26" stroke="#D4A056" stroke-width="1.5"/></svg>
       </div>
       <h3>Not Enough Automations</h3>
-      <p>You&rsquo;re doing by hand what a system should do.</p>
+      <p>You&rsquo;re doing by hand what a system should do. And you&rsquo;re missing easy ways to connect with your community and clients, and build nurturing sequences that send the right message.</p>
     </div>
     <div class="door-card">
       <div class="door-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14 H48 L44 42 H20 Z" stroke="#38BDF8" stroke-width="1.5"/><line x1="14" y1="14" x2="50" y2="14" stroke="#38BDF8" stroke-width="1.5"/><line x1="27" y1="42" x2="29" y2="42" stroke="#F4F6FB" stroke-width="3"/><circle cx="28" cy="48" r="2.5" stroke="#D4A056" stroke-width="1.5"/><circle cx="33" cy="55" r="2.5" stroke="#D4A056" stroke-width="1.5"/><circle cx="25" cy="58" r="2" stroke="#D4A056" stroke-width="1.5"/><line x1="24" y1="24" x2="40" y2="24" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
       </div>
       <h3>Money Slips Through the Gaps</h3>
-      <p>You&rsquo;re plugging holes, not building revenue.</p>
+      <p>You&rsquo;re plugging holes without seeing where the business actually leaks revenue. The idea is to create more value, not to sell harder. Someone needs to give you advice on that, often from the outside.</p>
     </div>
   </div>
 
   <p class="problem-pullquote">&ldquo;Humans shouldn&rsquo;t run businesses.<br>Humans build systems. Systems run the business.&rdquo;</p>
+  <p class="quote-by">Kevin Mullaney, Founder</p>
 </section>
 
 <!-- =========== HOW IT WORKS =========== -->
 <section class="section wrap" id="how">
   <div>
-    <h2 class="section-title">Four Steps. 30&ndash;45 Days.</h2>
+    <div class="section-eyebrow">Your Commitment</div>
+    <h2 class="section-title">Four Steps. 30&ndash;45 Days. <em>$6,670.</em></h2>
+    <p class="section-subtitle">Our goal is to activate your highest and best blueprint for using AI and our marketing frameworks, to get your business operating at its highest level. We train you to use the system. We&rsquo;re not trying to become a marketing agency between you and your leads.</p>
   </div>
 
   <div class="timeline">
@@ -1164,7 +1177,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       <div class="phase-content">
         <div class="phase-days">Step 1</div>
         <h3>Map the Business</h3>
-        <p>Where your time and money go.</p>
+        <p>Where your time and money go. Most importantly, we identify the highest revenue-generating activities you could be doing, and what can be delegated and automated.</p>
       </div>
     </div>
     <div class="phase">
@@ -1181,8 +1194,8 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       </div>
       <div class="phase-content">
         <div class="phase-days">Step 2</div>
-        <h3>Test It for Real</h3>
-        <p>Real calls. Real clients.</p>
+        <h3>Analyze the Operation</h3>
+        <p>What your team is doing. How you generate leads, close deals and operate the business.</p>
       </div>
     </div>
     <div class="phase">
@@ -1197,8 +1210,8 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       </div>
       <div class="phase-content">
         <div class="phase-days">Step 3</div>
-        <h3>Build the Crew</h3>
-        <p>Who does what, so it isn&rsquo;t all you.</p>
+        <h3>Optimize: Build the Crew</h3>
+        <p>Your standard operating procedures, and the operating system on top of the brain we just built. Steps 1 and 2 put all your information in one place. Now we build the tools that point at it.</p>
       </div>
     </div>
     <div class="phase">
@@ -1217,10 +1230,15 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       <div class="phase-content">
         <div class="phase-days">Step 4</div>
         <h3>Switch On the System</h3>
-        <p>Your AI business brain goes live.</p>
+        <p>This activates everything we just did and sets up a recursive learning loop on all of it. That&rsquo;s AI as in actualized intelligence, not artificial intelligence. We set it to move on your information. Then it&rsquo;s yours to run.</p>
       </div>
     </div>
   </div>
+  <div class="after-sprint">
+    <h3>After the Build</h3>
+    <p>Once the build is done and you&rsquo;re running the system, come hang out with the rest of us. The community is $397 a month, billed 10 months of the year. We stay on as your consultant, maintain the system with you, and give you the confidence to run it yourself. It&rsquo;s a good place to be around other owners doing the same thing.</p>
+  </div>
+  <p class="sendoff">Congrats. Good luck.<br>Go make $1M.</p>
 </section>
 
 <!-- =========== PRICING =========== -->
@@ -1232,13 +1250,13 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   <div class="pricing-card">
     <div class="pricing-badge">Target: 30&ndash;45 Days</div>
     <div class="pricing-founding">$6,670</div>
+    <div class="pricing-note">Build fee. Our fee to do this with you.</div>
 
     <ul class="pricing-includes">
       <li>6 one-on-one sessions, plus voice check-ins</li>
       <li>Blueprint Report and Operating Manual</li>
       <li>Crew Plan and 90-Day Plan, with a 90-day review</li>
       <li>Live AI Business Brain</li>
-      <li>1 year of community access</li>
     </ul>
 
     <a href="https://calendly.com/roidigital/30min" class="btn btn-primary" style="width:100%; justify-content:center;">Book Your Free Call</a>
