@@ -316,10 +316,10 @@ a { color: var(--accent); }
   <div class="screen active" id="intro-screen">
     <div class="intro">
       <h1>Why does growing your business feel <em>harder</em> than it should?</h1>
-      <p>Find your Build Stage &mdash; the hidden bottleneck in how you&rsquo;re scaling &mdash; and the first move to fix it.</p>
+      <p>Find the one thing slowing you down, and the first move to fix it.</p>
       <div class="intro-meta">8 questions &middot; 2 minutes</div>
       <div class="btn-group" style="justify-content:center; margin-top:2rem;">
-        <button class="btn btn-primary" onclick="startQuiz()">Show Me My Blueprint</button>
+        <button class="btn btn-primary" onclick="startQuiz()">Start the Quiz</button>
       </div>
     </div>
   </div>
@@ -338,7 +338,7 @@ a { color: var(--accent); }
   <!-- EMAIL CAPTURE -->
   <div class="screen" id="capture-screen">
     <div class="capture">
-      <h2>Your Build Stage Is Ready</h2>
+      <h2>Your Results Are Ready</h2>
       <p>Where should we send your results?</p>
       <div class="field-group">
         <div class="field">
@@ -453,46 +453,46 @@ var RESULTS = {
   overloaded: {
     name: "Overloaded Foundation",
     quote: "“Everything runs through me.”",
-    mirror: "You’re the sales team, the delivery team, and the help desk. Revenue is real, but it stops the moment you do. Time off feels like a risk. You can’t remember the last full weekend you didn’t check your phone.",
-    cost: "Your growth ceiling is your own stamina. Most owners at this stage are one bad month from burnout — and the business has no plan for that.",
-    reframe: "The business was built on your energy, but not on how your energy actually works. Some people are wired for a long, steady burn. Others are built for sharp bursts and recovery. Running the wrong pattern drains you twice as fast. It’s not a discipline problem — it’s a design problem.",
-    move: "For one week, mark every task green (gives energy) or red (drains it). Your first hire or system is the biggest red block. Don’t start with what you’re bad at — start with what costs you the most energy.",
-    hot_reveal: "Your type tells us your energy pattern. You may be a steady engine that needs the right fuel, a burst-and-rest system that needs recovery built in, or a guide who was never meant to run the engine alone. Your front door — how you’re designed to make decisions — changes which tasks should stay with you and which need to go.",
-    warm_reveal: "There’s a reason some weeks leave you energized and others leave you empty — even when the workload is the same. It’s not random. How your energy works is part of your wiring, and once you see it, you can build around it instead of against it.",
-    sprint: "Weeks 1–3 of the sprint build your Founder Operating Manual: when to work, how to decide, and what to delegate first."
+    mirror: "You are the sales team, the service team and the help desk. The money is real, but it stops when you stop. Time off feels like a risk.",
+    cost: "Your growth can only go as far as your energy. If you burn out, the business has no plan for that.",
+    reframe: "The business was built on your energy, but not on how your energy really works. Some people do best at a long, steady pace. Others do best in short bursts with rest in between. Running the wrong way wears you out faster. It’s not a discipline problem. It’s a fit problem.",
+    move: "For one week, mark every task green (gives you energy) or red (drains you). Your first hire or system should take over the biggest red block.",
+    hot_reveal: "Your blueprint shows your energy pattern: steady, burst-and-rest, or built to guide others instead of running the engine alone. It also shows how you make your best choices. Together they tell us which tasks should stay with you and which should go.",
+    warm_reveal: "There’s a reason some weeks fill you up and others empty you, even when the workload is the same. It isn’t random. Once you see the pattern, you can build around it instead of against it.",
+    sprint: "In weeks 2 and 3 of the sprint, we build your operating manual: when to work, how to decide, and what to hand off first."
   },
   missing: {
     name: "Missing Rooms",
     quote: "“I don’t know who to hire.”",
-    mirror: "You know you need help, but every hire so far either felt like a clone of you or didn’t stick. You keep doing the tasks you hate because explaining them takes longer than just doing them yourself.",
-    cost: "A wrong first hire costs months of salary, onboarding time, and — worst of all — the confidence to try again. Most founders at this stage default to doing everything solo, which keeps the ceiling exactly where it is.",
-    reframe: "Most founders hire for what they’re good at, because that’s what they can judge in an interview. The real gaps are the rooms you don’t have built in — the work you avoid, not the work you understand.",
-    move: "List the three tasks you avoid longest. That’s your first role — described by the work and the energy it needs, not by a job title. “I need someone who loves the follow-up I dread” is a better brief than “I need an executive assistant.”",
-    hot_reveal: "Your blueprint shows which rooms are yours and which are open — where you naturally carry energy and where you’re borrowing it from others. The open rooms point straight at the role you need to fill first.",
-    warm_reveal: "There’s a pattern to which tasks drain you and which ones don’t. It’s not about discipline or preference — some work genuinely isn’t built for your wiring. Once you see the pattern, hiring gets a lot clearer.",
-    sprint: "Weeks 3–5 of the sprint build your Crew Plan: a first-hire role profile written by work and energy, plus a delegation list that actually sticks."
+    mirror: "You know you need help. But every hire so far felt like a copy of you, or didn’t last. You keep doing tasks you hate because explaining them takes longer than doing them.",
+    cost: "A wrong first hire costs you months of pay and training. Worse, it costs you the nerve to try again. So you go back to doing it all yourself.",
+    reframe: "Most owners hire for what they’re good at, because that’s what they know how to judge. The real gap is the work you avoid, not the work you understand.",
+    move: "List the three tasks you put off longest. That’s your first role. Describe it by the work, not by a job title. “I need someone who loves the follow-up I dread” beats “I need an assistant.”",
+    hot_reveal: "Your blueprint shows where your energy is steady and where you borrow it from other people. The places you borrow point straight at the role to fill first.",
+    warm_reveal: "There’s a pattern to which tasks drain you and which don’t. It’s not about discipline. Some work just isn’t a fit for how you’re built. Once you see the pattern, hiring gets much clearer.",
+    sprint: "In weeks 4 and 5 of the sprint, we build your crew plan: a first-hire profile and a hand-off list that sticks."
   },
   crossed: {
     name: "Crossed Wires",
     quote: "“My team isn’t in sync.”",
-    mirror: "Good people, tense meetings. Decisions stall or get re-made. Someone’s always frustrated and you can’t put your finger on exactly why. You end up as the referee more than the leader.",
-    cost: "Slow decisions, quiet turnover, and you stuck in the middle. The team has talent, but the energy is off — and that’s costing you speed, trust, and good people.",
-    reframe: "People amplify each other’s energy without knowing it. One person’s open room picks up another person’s stress and broadcasts it louder. Nobody’s wrong — the wiring is crossed. Clear the wiring and the same team moves faster.",
-    move: "Write down who owns which three decisions. Wherever two names show up for the same decision, you’ve found a crossed wire. That’s where the tension lives.",
-    hot_reveal: "Your type shows how you’re designed to lead, and your front door shows how you make your best decisions. When the team sees each other’s designs — who’s a steady engine, who’s a guide, who’s a launcher — the friction starts to make sense.",
-    warm_reveal: "There’s a reason some team combinations click and others grind, even when everyone’s talented and trying. It’s not personality — it’s how energy moves between people. Mapping it changes the conversation.",
-    sprint: "Weeks 4–5 of the sprint run The Build: a team exercise that maps the crew, clarifies decision rights, and gives every person a one-page operating card."
+    mirror: "Good people, tense meetings. Decisions stall or get made twice. Someone is always frustrated and you can’t say why. You feel more like a referee than a leader.",
+    cost: "Slow decisions. People quietly leaving. You stuck in the middle. The team has talent, but the tension is costing you speed and trust.",
+    reframe: "People pick up each other’s stress without knowing it. One person’s bad day spreads to the whole room. Nobody is wrong. The signals are crossed. Clear them up and the same team moves faster.",
+    move: "Write down who owns your three biggest decisions. Wherever two names show up for the same decision, you’ve found a crossed wire.",
+    hot_reveal: "Your blueprint shows how you’re built to lead and how you make your best choices. When a team can see each other’s designs, the friction starts to make sense.",
+    warm_reveal: "There’s a reason some teams click and others grind, even when everyone is good at their job. It’s about how people affect each other. Mapping it changes the conversation.",
+    sprint: "In weeks 4 and 5 of the sprint, we map the team: who decides what, plus a one-page guide for each person."
   },
   wrong_door: {
     name: "Wrong Front Door",
     quote: "“Working hard, wrong results.”",
-    mirror: "You’re doing what the playbooks say: posting, cold outreach, launches. The effort is high, the return is thin, and it feels like pushing a door that should open but won’t.",
-    cost: "Months spent on strategies that were designed for someone else’s wiring. And a growing sense that something’s wrong with you — when really, something’s wrong with the door.",
-    reframe: "Only about one in ten people is built to cold-start everything. Most do better responding to demand, or being invited in for their expertise. Your marketing should go in through your front door, not someone else’s.",
-    move: "Look at your last five best clients or customers. How did each one start: you chased them, they came to you, or someone referred them? That pattern is your front door. Build from there.",
-    hot_reveal: "Your type tells us how you’re designed to engage with the world: are you a launcher, a responder, or a guide who wins through recognition? Your strategy and your front door reshape your entire sales process — channels, cadence, and content.",
-    warm_reveal: "There’s a reason some business approaches feel natural and others feel like pushing uphill. It’s not about effort or skill — it’s about fit. The way you’re wired to sell, show up, and close isn’t one-size-fits-all.",
-    sprint: "Weeks 5–6 of the sprint rebuild your marketing and load your business brain: offer framing, channels, and content rhythm — all matched to your front door."
+    mirror: "You’re doing what the playbooks say: posting, cold outreach, launches. The effort is high and the return is thin. It feels like pushing a door that won’t open.",
+    cost: "Months spent on plans built for someone else. And a growing feeling that something is wrong with you. It isn’t you. It’s the plan.",
+    reframe: "Some people do well starting cold. Many do better answering demand, or being asked in for what they know. Your marketing should fit the way you naturally win clients.",
+    move: "Look at your last five best clients. How did each one start: you chased them, they came to you, or someone sent them? That pattern is your front door. Build from there.",
+    hot_reveal: "Your blueprint shows how you’re built to reach people: by starting things, by answering demand, or by being asked in for what you know. That shapes your whole sales plan: where you show up, how often, and what you say.",
+    warm_reveal: "There’s a reason some ways of selling feel natural and others feel like pushing uphill. It’s not effort or skill. It’s fit.",
+    sprint: "In weeks 4 to 6 of the sprint, we sharpen your offer, rebuild your message and load your Business Brain, so your marketing fits you."
   }
 };
 
@@ -574,9 +574,9 @@ function showResults() {
   html += '<h2>' + r.name + '</h2>';
   html += '<div class="result-quote">' + r.quote + '</div>';
 
-  html += '<div class="result-section"><h3>The Mirror</h3><p>' + r.mirror + '</p></div>';
-  html += '<div class="result-section"><h3>What It’s Costing You</h3><p>' + r.cost + '</p></div>';
-  html += '<div class="result-section"><h3>The Reframe</h3><p>' + r.reframe + '</p></div>';
+  html += '<div class="result-section"><h3>Where You Are</h3><p>' + r.mirror + '</p></div>';
+  html += '<div class="result-section"><h3>What It Costs You</h3><p>' + r.cost + '</p></div>';
+  html += '<div class="result-section"><h3>What’s Really Going On</h3><p>' + r.reframe + '</p></div>';
 
   html += '<div class="result-move"><h3>Your First Move (Free)</h3><p>' + r.move + '</p></div>';
 
@@ -586,17 +586,17 @@ function showResults() {
     html += '<div class="result-reveal"><h3>There’s a Reason</h3><p>' + r.warm_reveal + '</p></div>';
   }
 
-  html += '<div class="result-section"><h3>What the Sprint Focuses On</h3><p>' + r.sprint + '</p></div>';
+  html += '<div class="result-section"><h3>What the Sprint Does About It</h3><p>' + r.sprint + '</p></div>';
 
   html += '<div class="result-cta">';
   if (track === 'hot') {
-    html += '<a href="/#book" class="btn btn-primary btn-full">Walk Through Your Full Blueprint</a>';
+    html += '<a href="/#book" class="btn btn-primary btn-full">See Your Full Blueprint on a Call</a>';
   } else if (track === 'warm') {
-    html += '<a href="/#book" class="btn btn-primary btn-full">See How You’re Built to Scale</a>';
+    html += '<a href="/#book" class="btn btn-primary btn-full">See What Fits You</a>';
   } else {
-    html += '<a href="/#book" class="btn btn-primary btn-full">Map Your Next 45 Days</a>';
+    html += '<a href="/#book" class="btn btn-primary btn-full">Plan Your Next Six Weeks</a>';
   }
-  html += '<p>Book a free 20-minute Blueprint Call with Kevin.</p>';
+  html += '<p>Book a free 20-minute call with Kevin.</p>';
   html += '</div>';
 
   document.getElementById('result-container').innerHTML = html;
