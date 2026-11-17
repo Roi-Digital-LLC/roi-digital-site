@@ -330,7 +330,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   <div class="screen active" id="intro-screen">
     <div class="intro">
       <h1>Where is your business <em>losing money?</em></h1>
-      <p>Five quick questions. Then a free 20-minute assessment.</p>
+      <p>Five quick questions. Then book a free 30-minute assessment.</p>
       <div class="intro-meta">5 questions &middot; 1 minute</div>
       <div class="btn-group" style="justify-content:center; margin-top:2rem;">
         <button class="btn btn-primary" onclick="startQuiz()">Start</button>
@@ -346,31 +346,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
       <div class="q-num" id="q-num"></div>
       <div class="q-text" id="q-text"></div>
       <div class="options" id="options-container"></div>
-    </div>
-  </div>
-
-  <!-- EMAIL CAPTURE -->
-  <div class="screen" id="capture-screen">
-    <div class="capture">
-      <h2>Your Result Is Ready</h2>
-      <p>Where should we send your results?</p>
-      <div class="field-group">
-        <div class="field">
-          <label for="cap-name">First Name</label>
-          <input type="text" id="cap-name" placeholder="Your first name" autocomplete="given-name">
-        </div>
-        <div class="field">
-          <label for="cap-email">Email</label>
-          <input type="email" id="cap-email" placeholder="you@example.com" autocomplete="email">
-        </div>
-      </div>
-      <div class="consent-row">
-        <input type="checkbox" id="cap-consent" checked>
-        <label for="cap-consent">I agree to receive my results and follow-up emails.</label>
-      </div>
-      <div class="btn-group">
-        <button class="btn btn-primary btn-full" id="cap-submit" onclick="showResults()">See My Results</button>
-      </div>
     </div>
   </div>
 
@@ -490,9 +465,7 @@ function showQuestion(idx) {
 }
 
 function goToCapture() {
-  document.getElementById('question-screen').classList.remove('active');
-  document.getElementById('capture-screen').classList.add('active');
-
+  showResults();
 }
 
 function getStage() {
@@ -501,14 +474,6 @@ function getStage() {
 }
 
 function showResults() {
-  var name = document.getElementById('cap-name').value.trim();
-  var email = document.getElementById('cap-email').value.trim();
-  if (!name || !email) {
-    document.getElementById('cap-name').style.borderColor = name ? '' : 'var(--red)';
-    document.getElementById('cap-email').style.borderColor = email ? '' : 'var(--red)';
-    return;
-  }
-
   var stage = getStage();
   var r = RESULTS[stage];
 
@@ -523,12 +488,12 @@ function showResults() {
   html += '<div class="result-section"><h3>Where We’d Start</h3><p>' + r.sprint + '</p></div>';
 
   html += '<div class="result-cta">';
-  html += '<a href="../#book" class="btn btn-primary btn-full">Book Your AI Assessment</a>';
-  html += '<p>Free. 20 minutes. A diagnostic, not a promise of savings.</p>';
+  html += '<a href="https://calendly.com/roidigital/30min" class="btn btn-primary btn-full">Book Your AI Assessment</a>';
+  html += '<p>Free. 30 minutes. A diagnostic, not a promise of savings.</p>';
   html += '</div>';
 
   document.getElementById('result-container').innerHTML = html;
-  document.getElementById('capture-screen').classList.remove('active');
+  document.getElementById('question-screen').classList.remove('active');
   document.getElementById('result-screen').classList.add('active');
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
